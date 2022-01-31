@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "QraoIL7eTN2etJMMNPN2YPTe244rIleWy8fsvMqz61g=",
+  "Hash": "i5+alxDAZV/Gd1Kz6pcI3qfTdgMkRv/kwkng1ynq6kM=",
   "Source": "ApplicationManagement",
   "BasePath": "_content/ApplicationManagement",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/favicon.ico"
+    },
+    {
+      "Identity": "/home/carpediem/RiderProjects/projet/wwwroot/images/noimage.png",
+      "SourceId": "ApplicationManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/carpediem/RiderProjects/projet/wwwroot/",
+      "BasePath": "_content/ApplicationManagement",
+      "RelativePath": "images/noimage.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/noimage.png"
     },
     {
       "Identity": "/home/carpediem/RiderProjects/projet/wwwroot/js/site.js",

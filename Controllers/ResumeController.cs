@@ -65,12 +65,23 @@ public class ResumeController : Controller
     }
 
 
-    public IActionResult Edit()
-    {
-        throw new NotImplementedException();
+    [HttpGet]
+    public IActionResult Edit(int Id)
+    {Applicant applicant = _dbContext.Applicants
+            .Include(e => e.Experiences)
+            .Where(a => a.Id == Id).FirstOrDefault();
+        return View(applicant);
     }
 
-   
+
+    [HttpPost]
+    public IActionResult Edit(Applicant applicant)
+    {
+        _dbContext.Add(applicant);
+        _dbContext.SaveChanges();
+        return RedirectToAction("index");
+    }
+    
     public IActionResult Delete(int Id)
     {
         Applicant applicant = _dbContext.Applicants

@@ -35,6 +35,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVzdW1lL0RldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/home/carpediem/RiderProjects/projet/Views/Resume/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVzdW1lL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/carpediem/RiderProjects/projet/Views/Resume/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVzdW1lL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

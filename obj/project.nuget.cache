@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Eqy383sOX/pPnB/dOxjBtpFX4CcSHMTA1mm0m9ReZtV+MCnN6hCwY5GeSYkLCTZDxkLslfp1Hf2Vi2VOUHpXeg==",
+  "dgSpecHash": "2DwxjGFpflbHUipDgOudRJXe0iH8ilf7C+A9pJQr6UzNtxG5E64Gur4l9j4hbsYosUodIC/nNdUlqOZ4EbhslA==",
   "success": true,
-  "projectFilePath": "/home/carpediem/RiderProjects/ApplicationManagement/ApplicationManagement/ApplicationManagement.csproj",
+  "projectFilePath": "/home/carpediem/RiderProjects/projet/ApplicationManagement.csproj",
   "expectedPackageFiles": [
     "/home/carpediem/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/home/carpediem/.nuget/packages/microsoft.entityframeworkcore/6.0.1/microsoft.entityframeworkcore.6.0.1.nupkg.sha512",

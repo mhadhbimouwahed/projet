@@ -44,38 +44,18 @@ public class ResumeController : Controller
     public IActionResult Create(Applicant applicant)
     {
         applicant.Experiences.RemoveAll(n => n.YearsWorked == 0);
-        string uniqueFileName = GetUploadedFileName(applicant);
-        applicant.PhotoUrl = uniqueFileName;
-        foreach (Experience experience in applicant.Experiences)
-        {
-            if (experience.CompanyName == null || experience.CompanyName.Length == 0)
-            {
-                applicant.Experiences.Remove(experience);
-            }
-        }
+        
+        
+        
         _dbContext.Add(applicant);
         _dbContext.SaveChanges();
         return RedirectToAction("Index");
     }
 
 
-    private string GetUploadedFileName(Applicant applicant)
-    {
-        string uniqueFileName = null;
-        if (applicant.ProfilePhoto != null)
-        {
-            string uploadsFolder = Path.Combine(_webHost.WebRootPath, "images");
-            uniqueFileName = Guid.NewGuid().ToString() + "_" + applicant.ProfilePhoto.FileName;
-            string filePaht = Path.Combine(uploadsFolder, uniqueFileName);
-            using (var fileStream = new FileStream(filePaht,FileMode.Create))
-            {
-                applicant.ProfilePhoto.CopyTo(fileStream);
-            }
-        }
+    
 
-        return uniqueFileName;
-    }
-
+    
     public IActionResult Details(int Id)
     {
         Applicant applicant = _dbContext.Applicants.Include(e => e.Experiences)
@@ -84,7 +64,28 @@ public class ResumeController : Controller
         return View(applicant);
     }
 
-    
-    
+
+    public IActionResult Edit()
+    {
+        throw new NotImplementedException();
+    }
+
+   
+    public IActionResult Delete(int Id)
+    {
+        Applicant applicant = _dbContext.Applicants
+            .Include(e => e.Experiences)
+            .Where(a => a.Id == Id).FirstOrDefault();
+        return View(applicant);
+    }
+
+    [HttpPost]
+    public IActionResult Delete(Applicant applicant)
+    {
+        _dbContext.Attach(applicant);
+        _dbContext.Entry(applicant).State = EntityState.Deleted;
+        _dbContext.SaveChanges();
+        return RedirectToAction("index");
+    }
     
 }

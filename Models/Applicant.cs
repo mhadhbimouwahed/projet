@@ -28,10 +28,8 @@ public class Applicant
     public virtual List<Experience> Experiences { get; set; } = new List<Experience>();
     
     
-    public string PhotoUrl { get; set; }
-    [Required(ErrorMessage = "Please provide the profile photo")]
-    [Display(Name = "Profile Photo")]
-    [NotMapped]
-    public IFormFile ProfilePhoto { get; set; }
+    
+    
+    
 
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/carpediem/RiderProjects/ApplicationManagement/ApplicationManagement/ApplicationManagement.csproj": {}
+    "/home/carpediem/RiderProjects/projet/ApplicationManagement.csproj": {}
   },
   "projects": {
-    "/home/carpediem/RiderProjects/ApplicationManagement/ApplicationManagement/ApplicationManagement.csproj": {
+    "/home/carpediem/RiderProjects/projet/ApplicationManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/carpediem/RiderProjects/ApplicationManagement/ApplicationManagement/ApplicationManagement.csproj",
+        "projectUniqueName": "/home/carpediem/RiderProjects/projet/ApplicationManagement.csproj",
         "projectName": "ApplicationManagement",
-        "projectPath": "/home/carpediem/RiderProjects/ApplicationManagement/ApplicationManagement/ApplicationManagement.csproj",
+        "projectPath": "/home/carpediem/RiderProjects/projet/ApplicationManagement.csproj",
         "packagesPath": "/home/carpediem/.nuget/packages/",
-        "outputPath": "/home/carpediem/RiderProjects/ApplicationManagement/ApplicationManagement/obj/",
+        "outputPath": "/home/carpediem/RiderProjects/projet/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/carpediem/.nuget/NuGet/NuGet.Config"
